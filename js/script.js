@@ -18,13 +18,31 @@
 // console.log(typeof(null));
 
 
-const category = 'toys';
+// const category = 'toys';
 
-console.log(`https://someurl.com/${category}/5`);
+// console.log(`https://someurl.com/${category}/5`);
 
-const user = "Ivan";
+// const user = "Ivan";
 
-alert(`Привет,${user}`); /* интерполяция (ES6) */
+// alert(`Привет,${user}`); /* интерполяция (ES6) */
 
 
+  const numberOfFilms = +prompt('Сколько фильмов вы  уже посмотрели?', '');
+
+  const personalMovieDB = {
+    count : numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+  };
+
+  const a = prompt('Один из последних просмотренных фильмов', ''),
+        b = prompt('На сколько оцените его?', ''),
+        c = prompt('Один из последних просмотренных фильмов', ''),
+        d = prompt('На сколько оцените его?', '');
+
+  personalMovieDB.movies[a] = b;
+  personalMovieDB.movies[a] = b;
   
+  console.log(personalMovieDB);
